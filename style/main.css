@@ -48,8 +48,71 @@ header nav a:hover {
     align-items: flex-start;
 }
 .filme-principal .descricao{
+    margin-top: 10px;
     margin-bottom: 40px;
 }
 .titulo{
+    margin-top: 10%;
     font-size: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+.botao{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+.botao i{
+    margin-right: 8px;
+}
+.container{
+    margin-left: 20px;
+}
+.filme-principal .container{
+    width: 60%;
+}
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    transform: scale(1);
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+.box-filme:hover{
+    transform: scale(1.1);
+}
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+header #divBusca{
+    background-color:#2f4f4f1e;
+    
+    border-radius:5px;
+    margin-left: 30%;
+    
+  }
+  header #divBusca i {
+      margin: 6px;
+      cursor: pointer;
+  }
+  
+header #txtBusca{
+
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    color: White;
+
+  }

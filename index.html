@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style/responsive.css">
     <title>Clone Netflix</title>
 </head>
 
@@ -13,11 +16,17 @@
     <header>
         <div class="container">
             <h2 class="logo">NETFLIX</h2>
+            <div id="divBusca">
+                
+                <i onclick="pesquisa()" name="busca" class="fas fa-search"></i>
+              </div>
             <nav>
+               
                 <a href="#">Inicio</a>
                 <a href="#">Séries</a>
                 <a href="#">Filmes</a>
                 <a href="#">Documentários</a>
+        
             </nav>
         </div>
     </header>
@@ -31,13 +40,51 @@
                     se juntam à luta, entre eles Dan Forester,
                     um pai de família determinado a salvar o mundo para sua filha.
                 </p>
-            </div>
-            <div class="botoes">
-                <button role="button" class="botao"> Assistir Agora</button>
-                <button role="button" class="botao"> Mais Informações</button>
+
+                <div class="botoes">
+                    <button role="button" class="botao"> <i class="fas fa-play"></i> Assistir Agora</button>
+                    <button role="button" class="botao"> <i class="fas fa-info-circle"></i>Mais Informações</button>
+                </div>
             </div>
         </div>
     </main>
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="img/controlz.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/Cruela.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/flash.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/Gameofthrones.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mortalkombat.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/Samuraix.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/sozjpg.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/Stargirl.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/velozesefuriosos.jpg" alt="">
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/dd30b5a8ce.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
