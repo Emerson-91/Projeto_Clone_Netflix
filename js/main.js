@@ -14,10 +14,7 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
-function pesquisa(){
-    let teste;
-    while (teste == true){
-    teste = $("#divBusca").append("<input type='text' id='txtBusca' placeholder='Buscar...'/>");
-    }
+$('#divBusca').one('click', function (e) {
+    let teste = $("#divBusca").append("<input type='text' id='txtBusca' placeholder='Buscar...'/>");
     return teste;
- }
+});
